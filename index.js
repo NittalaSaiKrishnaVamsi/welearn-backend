@@ -11,6 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 const JWT_SECRET = "SECRET_KEY";
+const express = require("express");
+console.log("DATABASE_URL exists:", !!process.env.DATABASE_URL);
+
 
 /* ======================
    AUTH MIDDLEWARE
